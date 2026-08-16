@@ -11,7 +11,7 @@ with DAG(
 ) as dag:
 
     extract_watch = BashOperator(
-        task_id="extract_watch"
+        task_id="extract_watch",
         bash_command="python scripts/extract_watch.py",
     )
 
